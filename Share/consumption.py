@@ -13,7 +13,10 @@ class Consumption:
         return self.price * self.consumption() / 100
 
 
-c = Consumption(40, 250, 49.35)
+p = float(input('Price per liter: '))
+t_dist = float(input('Traveled distance: '))
+f_used = float(input('Used fuel: '))
+c = Consumption(f_used, t_dist, p)
 
 print(f'consumption is {c.consumption()} km/h')
 print(f'price per 1km: {c.cost()} RUB')
