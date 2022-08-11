@@ -1,2 +1,2 @@
 # git_share
-# the script for the consumption calculation
+# in Share directory: the script for the consumption calculation
