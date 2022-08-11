@@ -11,7 +11,7 @@ sq = square(4)
 print(sq)
 
 
-# 2
+# 2 тут уже не функция конечно, а целый класс :)
 class Square:
     def __init__(self, side):
         self.side = side
@@ -25,7 +25,12 @@ class Square:
     def diagonal(self):
         return self.side * 2 ** 0.5
 
+    def get_tuple(self):
+        return self.perimeter(), self.sq_area(), self.diagonal()
+
 
 s = Square(int(input('Enter the side of square: ')))
 
-print((s.perimeter(), s.sq_area(), s.diagonal()))
+print(type(s.get_tuple()))
+print(s.get_tuple())
+
