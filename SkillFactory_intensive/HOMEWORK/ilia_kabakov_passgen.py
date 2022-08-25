@@ -1,12 +1,13 @@
 import random as rnd
+import string as st
 
 
 #   создаем класс для генерации
 class Password:
     def __init__(self, length: int = 10):
-        self.spec_symbols: str = '!@#$%^&*()-_+=;:,./?\|`~[]{}'
-        self.digits: str = '1234567890'
-        self.alphabet: str = 'abcdefghijklmnopqrstuvwxyzABCDEFJHIJKLMNOPQRSTUVWXYZ'
+        self.spec_symbols: str = st.punctuation
+        self.digits: str = st.digits
+        self.alphabet: str = st.ascii_letters
         self.password: str = ''
         self.length = length
 
