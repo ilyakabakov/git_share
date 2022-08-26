@@ -43,7 +43,7 @@ class Password:
     def password_gen(self):
         """Собственно сам генератор"""
         for i in range(self.check_length()):
-            self.password += rnd.choice(self.alphabet)  #yield?
+            self.password += rnd.choice(self.alphabet)  # yield?
         return self.password
 
     def generate(self):
@@ -55,5 +55,6 @@ class Password:
         return self.password
 
 
-pg = Password(int(input('Enter length of the password symbols(min:6, max:100):\n')))
-print(pg.generate())
+if __name__ == '__main__':
+    pg = Password(int(input('Enter length of the password symbols(min:6, max:100):\n')))
+    print(pg.generate())
