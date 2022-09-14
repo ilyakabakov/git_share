@@ -19,6 +19,6 @@ if __name__ == '__main__':
     f_used = float(input('Used fuel: '))
     c = Consumption(f_used, t_dist, p)
 
-    print(f'consumption is {c.consumption()} km/h')
-    print(f'price per 1km: {c.cost()} RUB')
-    print(f"price per 100km:{c.cost() * 100} RUB")
+    print(f'consumption is {c.consumption():.1f} l/km')
+    print(f'price per 1km: {c.cost():.1f} RUB')
+    print(f"price per 100km: {c.cost() * 100:.1f} RUB")
