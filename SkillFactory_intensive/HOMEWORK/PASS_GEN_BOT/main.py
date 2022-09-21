@@ -1,6 +1,6 @@
 import random as rnd
 import string as st
-# from ilia_kabakov_first_bot import generator as g
+
 
 
 #   создаем класс для генерации
