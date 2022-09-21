@@ -1,2 +1,3 @@
-# git_share
-# in Share directory: the script for the consumption calculation
+# "../Share/" - My first script for the consumption calculation
+# "../HOMEWORK/"  - Telegram Bot for password generation
+# "/Tasks_from_pythonworld.ru/" - solving various tasks from the pythonworld.ru
